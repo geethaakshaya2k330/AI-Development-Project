@@ -18,7 +18,7 @@ My main responsibility in the group project was the evaluation and performance a
 
 My contribution included:
 
-- Designing the evaluation approach
+- Designing the evaluation framework
 - Spearman Rank Correlation analysis
 - Kendall Tau analysis
 - Top-K Feature Agreement
@@ -26,7 +26,7 @@ My contribution included:
 - ROAR (Remove and Retrain) evaluation
 - Analysis and interpretation of the experimental results
 
-The complete notebook contains the overall group project workflow. The evaluation sections listed above relate to my assigned contribution.
+The complete notebook contains the overall group project workflow. The evaluation tasks listed above relate to my assigned contribution.
 
 ## Relevant Notebook Sections
 
@@ -50,25 +50,30 @@ Uses a Remove and Retrain approach to examine model performance after removing f
 
 ### Final Comparison Summary
 
-Summarises the main experimental outputs used when reviewing and comparing the XAI methods.
+Provides a summary of the experimental outputs used when reviewing the final results.
 
 ## Evaluation Results
 
-The `Evaluation Results` folder contains the main visual outputs related to my evaluation work:
+The `Evaluation Results` folder contains supporting outputs related to my evaluation tasks:
 
 - `Correlation.png` – Spearman correlation heatmap
-- `TopK_Agreement.png` – Top-K Feature Agreement
-- `Runtime.png` – Runtime comparison
+- `TopK_Agreement.png` – Top-K Feature Agreement results
+- `Runtime.png` – Runtime comparison results
 - `ROAR.png` – ROAR evaluation results
+
+These figures provide visual evidence of the evaluation results discussed in my individual contribution.
 
 ## Repository Contents
 
-- `CompareXAI.ipynb` – complete project notebook
-- `Evaluation Results/` – supporting evaluation figures
-- `README.md` – repository information
+- `CompareXAI.ipynb` – complete group project notebook with code and saved outputs
+- `Evaluation Results/` – supporting outputs for the evaluation tasks
+- `README.md` – project and repository information
 
-## Dataset
+## Requirements
 
-The project uses the Breast Cancer Wisconsin Diagnostic (WDBC) dataset.
+The notebook can be opened using Google Colab or Jupyter Notebook.
 
-The completed notebook already contains the generated outputs and results. The original `wdbc.data` file is required only if the notebook is executed again from the beginning.
+The main Python libraries used are:
+
+```bash
+pip install numpy pandas matplotlib scikit-learn shap lime scipy
