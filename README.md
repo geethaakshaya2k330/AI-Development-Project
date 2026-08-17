@@ -1,83 +1,74 @@
 # CompareXAI: Feature Attribution Comparison Framework
 
-## Overview
+## Project Overview
 
-CompareXAI is a Python-based Explainable AI (XAI) framework that
-compares SHAP, LIME, and Permutation Feature Importance using the Breast
-Cancer Wisconsin Diagnostic (WDBC) dataset.
+CompareXAI is a group Explainable AI (XAI) project based on the Breast Cancer Wisconsin Diagnostic (WDBC) dataset.
 
-## Requirements
+The project compares three feature-attribution methods:
 
--   Python 3.10+
--   Dataset file: `wdbc.data`
+- SHAP
+- Global LIME
+- Permutation Feature Importance
 
-Install dependencies:
+The complete project workflow is available in `CompareXAI.ipynb`.
 
-``` bash
-pip install numpy pandas matplotlib scikit-learn shap lime scipy
-```
+## My Contribution
 
-## Project Files
+My main responsibility in the group project was the evaluation and performance analysis of the XAI methods.
 
-    CompareXAI.py
-    wdbc.data
-    README.md
+My contribution included:
 
-## Running the Project
+- Designing the evaluation approach
+- Spearman Rank Correlation analysis
+- Kendall Tau analysis
+- Top-K Feature Agreement
+- Runtime Analysis
+- ROAR (Remove and Retrain) evaluation
+- Analysis and interpretation of the experimental results
 
-1.  Place `CompareXAI.py` and `wdbc.data` in the same folder.
-2.  Install the required libraries.
-3.  Run:
+The complete notebook contains the overall group project workflow. The evaluation sections listed above relate to my assigned contribution.
 
-``` bash
-python CompareXAI.ipynb
-```
+## Relevant Notebook Sections
 
-## Workflow
+The main technical evidence for my contribution is available in `CompareXAI.ipynb`.
 
--   Load WDBC dataset
--   Preprocess data
--   Train ML models
--   Evaluate performance
--   Generate SHAP explanations
--   Generate Global LIME explanations
--   Generate Permutation Importance
--   Compare XAI methods
--   Perform correlation analysis
--   Compute Top-K agreement
--   Perform runtime comparison
--   Perform ROAR evaluation
--   Save plots and CSV results
+### Correlation Analysis
 
-## Models
+Contains the Spearman Correlation and Kendall Tau calculations used to compare the similarity between feature rankings produced by the XAI methods.
 
--   Logistic Regression
--   Decision Tree
--   Random Forest
--   Support Vector Machine (SVM)
+### Top-K Feature Agreement
 
-## XAI Methods
+Compares the overlap between the highest-ranked features identified by SHAP, Global LIME and Permutation Feature Importance.
 
--   SHAP
--   Global LIME
--   Permutation Feature Importance
+### Runtime Comparison
 
-## Outputs
+Compares the execution time of the XAI methods during the project experiment.
 
+### ROAR Evaluation
 
-### Figures
+Uses a Remove and Retrain approach to examine model performance after removing features identified as important.
 
--   SHAP_Summary.png
--   Correlation.png
--   Runtime.png
--   ROAR.png
--   TopK_Agreement.png
+### Final Comparison Summary
 
-## Notes
+Summarises the main experimental outputs used when reviewing and comparing the XAI methods.
 
--   Ensure `wdbc.data` is available before execution.
--   Output files are saved automatically in the project directory.
+## Evaluation Results
 
-## Author
+The `Evaluation Results` folder contains the main visual outputs related to my evaluation work:
 
-Project: **CompareXAI: Feature Attribution Comparison Framework**
+- `Correlation.png` – Spearman correlation heatmap
+- `TopK_Agreement.png` – Top-K Feature Agreement
+- `Runtime.png` – Runtime comparison
+- `ROAR.png` – ROAR evaluation results
+
+## Repository Contents
+
+- `CompareXAI.ipynb` – complete project notebook
+- `Evaluation Results/` – supporting evaluation figures
+- `README.md` – repository information
+
+## Dataset
+
+The project uses the Breast Cancer Wisconsin Diagnostic (WDBC) dataset.
+
+The completed notebook already contains the generated outputs and results. The original `wdbc.data` file is required only if the notebook is executed again from the beginning.
