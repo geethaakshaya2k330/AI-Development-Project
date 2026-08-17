@@ -30,7 +30,7 @@ pip install numpy pandas matplotlib scikit-learn shap lime scipy
 3.  Run:
 
 ``` bash
-python CompareXAI.py
+python CompareXAI.ipynb
 ```
 
 ## Workflow
