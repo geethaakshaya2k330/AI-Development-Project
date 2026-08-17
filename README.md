@@ -56,10 +56,10 @@ Provides a summary of the experimental outputs used when reviewing the final res
 
 The `Evaluation Results` folder contains supporting outputs related to my evaluation tasks:
 
-- `Correlation.png` – Spearman correlation heatmap
-- `TopK_Agreement.png` – Top-K Feature Agreement results
-- `Runtime.png` – Runtime comparison results
-- `ROAR.png` – ROAR evaluation results
+- `Correlation.jpeg` – Spearman correlation heatmap
+- `TopK_Agreement.jpeg` – Top-K Feature Agreement results
+- `Runtime.jpeg` – Runtime comparison results
+- `ROAR.jpeg` – ROAR evaluation results
 
 These figures provide visual evidence of the evaluation results discussed in my individual contribution.
 
