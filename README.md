@@ -4,6 +4,13 @@
 
 CompareXAI is a group Explainable AI (XAI) project based on the Breast Cancer Wisconsin Diagnostic (WDBC) dataset.
 
+## Dataset
+
+This project uses the Breast Cancer Wisconsin Diagnostic (WDBC) dataset from the UCI Machine Learning Repository.
+
+Dataset source:
+https://archive.ics.uci.edu/dataset/17/breast+cancer+wisconsin+diagnostic
+
 The project compares three feature-attribution methods:
 
 - SHAP
